@@ -1,2 +1,2 @@
-# go_training
-Introductory Go course
+
+Types and Variables Declaration
