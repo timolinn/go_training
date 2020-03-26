@@ -53,32 +53,11 @@ In the code below, the first statement declares both in and err. The second decl
      out, err := os.Create(outfile)
 ```
 
-### Pointers
-
-A pointer value is the address of a variable. A pointer is thus the location at which a value is stored. Not every value has an address, but every variable does. If a variable is declared var x int, the expression &x ("address of x") yields a pointer to an integer variable, that is, a value of type *int, which is pronounced "pointer to int."
-
-```go
-    var n *int
-    n := new(int) // returns *int
-```
-
-Each call to new returns a distinct variable with a unique address:
-
-```go
-     p := new(int)
-     q := new(int)
-     fmt.Println(p == q) // "false"
-```
-
-There is one exception to this rule: two variables whose type carries no information and is therefore of size zero, such as struct{} or [0]int, may, depending on the implementation, have the same address.
-
 ### Lifetime variables
 
 Package-level variables lasts the entire lifetime of the program execution. local variables live until they become unreachable. New instances are created everytime the declarations are executed
 
-### Assignments
-
-#### Tuple Assignments
+### Tuple Assignments
 
 Tuple assignments allows multiple assigments
 
