@@ -20,9 +20,8 @@ We can use `len` to get the length of the array. For cases where we don't know t
 Slices are lightweight structures that represent a portion of an array. You'll most likely use Slices way more than you'll be using Arrays in your programs:
 
 ```go
-    // 0   1  2  3  4  5...
-    // [2, 3, 5, 6, 7..... 1000000]
-    // [ptr => 2, len, cap]
+    // example underlying array: nums := [2, 3, 5, 6, 7..... 1000000]
+    // slice => [ptr => 2, len, cap] == nums[:]
 
     children := []string{"Elves", "Men"}
 
@@ -37,13 +36,14 @@ A Slice can also be created from an existing array
     ladies := valar[2:]
 ```
 
-A Slice is always a pointer to an underlying array, it has a _len_ and _capacity_ properties.
+A Slice is always a pointer to an underlying array, it has a _length_ and _capacity_ properties, that can be retrived using the _len()_ and _cap()_ built-in functions respectively.
 
 ## Maps
 
 Maps are key - value pairs structure. In some other languages, they are called Hashtables or Dictionaries.
 
 ```go
+    // [key => value]
     // [ 0 => 1, 1 => 2]
     // [ "one" => 1, "two" => 2]
 
@@ -55,8 +55,12 @@ Maps are key - value pairs structure. In some other languages, they are called H
         "Feanor" : "Noldo",
     }
 
+    // you can access the data in a map like this
+    fmt.Println(clans["Feanor"])
+
     // get the length
     l := len(clans)
+
     // Delete
     delete(clans, "Noldo")
 ```

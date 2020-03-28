@@ -19,7 +19,6 @@ const (
 )
 
 func main() {
-	fmt.Println(charAt("hello", 5))
 	var tim Gender = 0
 	var jane Gender = 1
 	var they Gender = 2
