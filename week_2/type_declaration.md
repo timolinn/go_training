@@ -1,6 +1,6 @@
 # Type Declarations
 
-Type declaration is where we declare a new __named type__, like `int`, `float64` etc, Go gives us the ability to create our own named types that shares the same behaviour with an existing type and at the same type flexible enough that we cannot confuse two separate custom defined `type` as being the same. For eg. `int valaue` == `int value` is true, but `named type` == `named type` may not be true. The underlying type of a named type determines its str ucture and represent ation, and also the set of int rinsic operations it supports, which are the same as if the underlying type had been us ed directly. To declare a named type:
+Type declaration is where we declare a new __named type__, like `int`, `float64` etc, Go gives us the ability to create our own named types that shares the same behaviour with an existing type and at the same time flexible enough that we cannot confuse two separate _named types_ `type` as being the same. For eg. `int value` == `int value` is true, but `named type` == `named type` may not be true. The underlying type of a _named type_ determines its str ucture and represent ation, and also the set of int rinsic operations it supports, which are the same as if the underlying type had been used directly. To declare a _named type_:
 
 ```go
     type NewType struct {}

@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+	"log"
+)
 
 func functions() {
 	r := addInts(20, 30)
@@ -21,4 +25,14 @@ func functions() {
 func addInts(a, b int) int {
 	// body
 	return a + b
+}
+
+// this function returns the character at
+// the specified index
+func charAt(word string, index int) string {
+	if index >= len(word) {
+		log.Fatal(errors.New("No character at the specified index"))
+	}
+	char := word[index]
+	return string(char)
 }

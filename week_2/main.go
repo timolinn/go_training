@@ -19,6 +19,7 @@ const (
 )
 
 func main() {
+	fmt.Println(charAt("hello", 5))
 	var tim Gender = 0
 	var jane Gender = 1
 	var they Gender = 2
@@ -44,6 +45,15 @@ func (g Gender) toString() string {
 	default:
 		return "Unknown Gender"
 	}
+}
+
+// sets g to a new Gender
+func (g *Gender) newGender(gender Gender) {
+	if gender > NewGender || gender < Male {
+		fmt.Printf("%s is not a known gender", gender.toString())
+		return
+	}
+	*g = gender
 }
 
 // gobyexample.com
