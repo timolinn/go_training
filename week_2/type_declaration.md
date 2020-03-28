@@ -24,7 +24,7 @@ Each call to new returns a distinct variable with a unique address:
      fmt.Println(p == q) // "false"
 ```
 
-There is one exception to this rule: two variables whose type carries no information and is therefore of size zero, such as struct{} or [0]int, may, depending on the implementation, have the same address.
+There is one exception to this rule: two variables whose type carries no information and is therefore of size zero, such as `struct{}` or `[0]int`, may, depending on the implementation, have the same address.
 
 Pointers makes it possible to pass a parameter by reference, as opposed to Go's default _pass by value_. Consider the code below, what do you think it prints?
 
@@ -63,7 +63,7 @@ Functions can return multiple values in Go, once a return type has been defined 
 
 ### Methods
 
-Methods are functions attached to Structures. Like in Java or PHP, the functions of an existing class is called a method, they are responsible for adding arbitrary behaviour to Objects. The same principle applies to methods in Go. However, Go is pro `composition over inheritance`, hence methods are `attached` to structs in a completely different way as in Java et al.
+Methods are functions attached to a type. Like in Java or PHP, the functions of an existing class is called a method, they are responsible for adding arbitrary behaviour to Objects. The same principle applies to methods in Go. However, Go is pro `composition over inheritance`, hence methods are `attached` to structs in a completely different way as in Java et al.
 
 ```go
 

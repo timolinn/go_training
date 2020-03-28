@@ -2,7 +2,7 @@
 
 ## Arrays
 
-Arrays can be referred to as a __list__ of items of the same type. Go's Arrays are fixed, this means that during declaration, you must specify the size of the array and type it will contain, these cannot be changed at runtime.
+Arrays can be referred to as a __list__ of items of the same type. Go's Arrays are fixed size, this means that during declaration, you must specify the size of the array and type it will contain, these cannot be changed at runtime.
 
 ```go
     var children [2]string
@@ -20,6 +20,10 @@ We can use `len` to get the length of the array. For cases where we don't know t
 Slices are lightweight structures that represent a portion of an array. You'll most likely use Slices way more than you'll be using Arrays in your programs:
 
 ```go
+    // 0   1  2  3  4  5...
+    // [2, 3, 5, 6, 7..... 1000000]
+    // [ptr => 2, len, cap]
+
     children := []string{"Elves", "Men"}
 
     // or
@@ -40,6 +44,9 @@ A Slice is always a pointer to an underlying array, it has a _len_ and _capacity
 Maps are key - value pairs structure. In some other languages, they are called Hashtables or Dictionaries.
 
 ```go
+    // [ 0 => 1, 1 => 2]
+    // [ "one" => 1, "two" => 2]
+
     clans := make(map[string]string)
     clans["Feanor"] = "Noldo Elves"
 
