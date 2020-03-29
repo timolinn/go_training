@@ -47,6 +47,31 @@ Pointers makes it possible to pass a parameter by reference, as opposed to Go's 
     }
 ```
 
+### The `reference` (&) and the `dereference` (*) operators
+
+The reference operator can also be referred to as `address of` operator, it is used to fetch the memory address of a value or a variable. As mentioned above, you can fetch the memory address of variable `x` by prefixing it with the reference operator ie. `&` (ampersand) the returned value is otherwise known as a pointer. In other words, a pointer value of variable `x` is `&x`.
+
+The deference operator does the opposite of what the reference operator does but can only work or can only be used on pointer expressions eg. `&x`. Assuming we get the pointer to a variable `y` by doing `var y = new(int)` or `var y = &x`, you'll notice we cannot assign a new value with to `y`  without using the `*` operator. Trying to print `y` using the `fmt.Println` method would return a memory address instead of the expected value. Consider the code below:
+
+```go
+    func main() {
+        var x = 5
+        var y = &x // assigns variable x's memory address to "y"
+        fmt.Println(y)
+    }
+```
+
+Running the code above would print a memory address not the actual value. Now, prefix `y` with the `*` operator ie. `fmt.Println(*y)` and try again. The `*` operator deferences the value from the location where it's stored in your computer memory. This simply means going to the location and retriving the actual value. Consider thecode below:
+
+```go
+    func main() {
+        var y = new(int) // the new built-in function returns a pointer to int ie. "*int"
+        y = 5 // compile error
+    }
+```
+
+The above code won't compile because `y` is of type `*int` (pointer to an `int`), while the value `5` is of type `int`, classic "type mismatch error". To fix this, we can go ahead and prefix `y` with the deference operator `*` ie `*y = 5`, then try compiling again.
+
 ## Functions and Methods
 
 Functions are first class types in Go. You'll see them "everywhere you Go", they provide us with the means to wrap a sequence of statements and expressions into a single unit.
