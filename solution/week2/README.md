@@ -26,7 +26,7 @@ The following demonstrate the steps to create a `FeetToCentimeter` & `Centimeter
 ```go
     func main() {
       // ...
-      fmt.Println(converter.CentimeterToFeet(13.50))
+      fmt.Println(cvr.CentimeterToFeet(13.50))
       // ..
     }
 ```
