@@ -8,7 +8,7 @@ Create a `struct` called `Converter`, It will contain `methods` that can convert
 
 The following demonstrate the steps to create a `FeetToCentimeter` & `CentimeterToFeet`:
 
-+ Create a struct type called `Converter`.
++ Create a struct type called `Converter`. (You only need to do this once)
 + Create the __named types__ for both units:
 
   + ```go
