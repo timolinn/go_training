@@ -31,7 +31,7 @@ The following demonstrate the steps to create a `FeetToCentimeter` & `Centimeter
     }
 ```
 
-> Hint 2: your method signatures should look like this `func CentimeterToFeet(c Centimeter) Feet { // code }`
+> Hint 2: your method signatures should look like this `func (cvr Converter) CentimeterToFeet(c Centimeter) Feet { // code }`
 
 ## Compulsory exercises
 
