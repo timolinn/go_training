@@ -4,7 +4,7 @@
 
 The task for week 2 is to build a bi-directional (converts both ways) unit converter.
 
-Create a `struct` called `Converter`, It will contain `methods` that can convert various units in a bi-directional way, that is, if we `attach` a method to the `Converter` struct called `FeetToCentimeter` that converts every value in `feet` to `centimeter`, we must have a corresponding `method` that converts `centimeter` to `feet` called `CentimeterToFeet`. Every unit must be represented as a __named type__.
+Create a `struct` called `Converter`, It should hold `methods` that can convert various units in a bi-directional way, that is, if we `attach` a method to the `Converter` struct called `FeetToCentimeter` that converts every value in `feet` to `centimeter`, we must have a corresponding `method` that converts `centimeter` to `feet` called `CentimeterToFeet`. Every unit must be represented as a __named type__.
 
 The following demonstrate the steps to create a `FeetToCentimeter` & `CentimeterToFeet`:
 
