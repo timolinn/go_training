@@ -36,7 +36,7 @@ The following demonstrate the steps to create a `FeetToCentimeter` & `Centimeter
 ## Compulsory exercises
 
 + Minutes to Seconds
-+ Seconds to Milliseconds
++ Seconds to Minutes
 + Centimeter to Feet
 + Feet to Centimeter
 + Celsius to Fahrenheit
