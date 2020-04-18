@@ -43,3 +43,19 @@
 ## Week3
 
 - Interfaces
+- Packages (Public and Private feature)
+- Error Handling
+- Goroutines and Channels
+- Sync
+
+## Week4
+
+- Testing and Benchmarking
+- HTTP
+- Writing Documentation
+
+## Week5
+
+- Reflection
+- The Go Tool
+- Exercises
