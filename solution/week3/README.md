@@ -20,6 +20,10 @@ Your job is to extend this function by making it possible to export to multiple 
   + _YAML (Optional)_
 
   Note that they must contain valid data structures of the file type eg. `fbdata.json` must contain VALID json data.
+  
+  ```json
+    { "1": "Facebook feeds", "2": "Hey, here's my cool new selfie" }
+  ```
 
 + Write a program in your `main.go` that use this package to export data from all the existing social media platforms (mentioned above).
 + Upload your solution to github INCLUDING the exported data and submit the project link on HNG Board.
