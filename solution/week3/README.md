@@ -28,5 +28,6 @@ Your job is to extend this function by making it possible to export to multiple 
 
 ## Resources
 
++ <https://blog.golang.org/json>
 + <https://gobyexample.com/json>
 + <https://gobyexample.com/xml>
