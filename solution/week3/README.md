@@ -1,6 +1,6 @@
 # Exercise for Week 3
 
-## Export our Social Media feeds to a JSON and XML file types
+## Export our Social Media feeds to JSON and XML file types
 
 Your task is to extend the [social media program](https://github.com/timolinn/go_training/blob/fc60d4d9a0ae33abbfe0d4d0c96cc23489da809f/week3/cmd/main.go#L31) that we wrote in the video lesson.
 
