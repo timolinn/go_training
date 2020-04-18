@@ -4,11 +4,11 @@
 
 The task for week 2 is to build a bi-directional (converts both ways) unit converter.
 
-Create a `struct` called `Converter`, It will contain `methods` that can convert various units in a bi-directional way, that is, if we `attach` a method to the `Converter` struct called `FeetToCentimeter` that converts every value in `feet` to `centimeter`, we must have a corresponding `method` that converts `centimeter` to `feet` called `CentimeterToFeet`. Every unit must be represented as a __named type__.
+Create a `struct` called `Converter`, It should hold `methods` that can convert various units in a bi-directional way, that is, if we `attach` a method to the `Converter` struct called `FeetToCentimeter` that converts every value in `feet` to `centimeter`, we must have a corresponding `method` that converts `centimeter` to `feet` called `CentimeterToFeet`. Every unit must be represented as a __named type__.
 
 The following demonstrate the steps to create a `FeetToCentimeter` & `CentimeterToFeet`:
 
-+ Create a struct type called `Converter`.
++ Create a struct type called `Converter`. (You only need to do this once)
 + Create the __named types__ for both units:
 
   + ```go
@@ -26,17 +26,17 @@ The following demonstrate the steps to create a `FeetToCentimeter` & `Centimeter
 ```go
     func main() {
       // ...
-      fmt.Println(CentimeterToFeet(13.50))
+      fmt.Println(cvr.CentimeterToFeet(13.50))
       // ..
     }
 ```
 
-> Hint 2: your method signatures should look like this `func CentimeterToFeet(c Centimeter) Feet { // code }`
+> Hint 2: your method signatures should look like this `func (cvr Converter) CentimeterToFeet(c Centimeter) Feet { // code }`
 
 ## Compulsory exercises
 
 + Minutes to Seconds
-+ Seconds to Milliseconds
++ Seconds to Minutes
 + Centimeter to Feet
 + Feet to Centimeter
 + Celsius to Fahrenheit
