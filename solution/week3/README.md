@@ -1,8 +1,8 @@
 # Exercise for Week 3
 
-## Export our Social Media feeds to a JSON and XML file types
+## Export our Social Media feeds to JSON and XML file types
 
-Your task is to extend the social media program that we wrote in the video lesson.
+Your task is to extend the [social media program](https://github.com/timolinn/go_training/blob/fc60d4d9a0ae33abbfe0d4d0c96cc23489da809f/week3/cmd/main.go#L31) that we wrote in the video lesson.
 
 In the video, I wrote an `export` function that fetches the social media feeds and writes them to a `txt` file. The function signature looked like this:
 
@@ -20,6 +20,10 @@ Your job is to extend this function by making it possible to export to multiple 
   + _YAML (Optional)_
 
   Note that they must contain valid data structures of the file type eg. `fbdata.json` must contain VALID json data.
+  
+  ```json
+    { "1": "Facebook feeds", "2": "Hey, here's my cool new selfie" }
+  ```
 
 + Write a program in your `main.go` that use this package to export data from all the existing social media platforms (mentioned above).
 + Upload your solution to github INCLUDING the exported data and submit the project link on HNG Board.
@@ -28,5 +32,6 @@ Your job is to extend this function by making it possible to export to multiple 
 
 ## Resources
 
++ <https://blog.golang.org/json>
 + <https://gobyexample.com/json>
 + <https://gobyexample.com/xml>
