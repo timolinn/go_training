@@ -50,8 +50,8 @@
 
 ## Week4
 
-- Testing and Benchmarking
 - HTTP
+- Testing and Benchmarking
 - Writing Documentation
 
 ## Week5

@@ -8,7 +8,6 @@ Concurrency in a simpler terms means executing multiple tasks in a disorganised 
 
 Goroutines are lightweight threads that can be referred to as `green threads`. Threads are a known component of an operating system's process, they contain tasks or procedures to be executed in a process. A process is basically a program in execution. Your OS creates new processes for each program you launch. Processes are managed directly by the Operating system, memory allocations, CPU resources etc. To create a goroutine use the `go` keyword.
 
-
 ```go
     import (
         "fmt"
