@@ -51,11 +51,12 @@
 ## Week4
 
 - HTTP
-- Testing and Benchmarking
-- Writing Documentation
+- Testing
+- Exercises
 
 ## Week5
 
+- Benchmarking
+- Writing Documentation
 - Reflection
 - The Go Tool
-- Exercises

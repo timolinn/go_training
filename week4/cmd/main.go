@@ -68,6 +68,8 @@ func main() {
 	// Middlewares
 	http.ListenAndServe(":8000", mux)
 	// Database
+	// for how to connect to a DB, study the links db.md file
+	// study the code in "postgresql.go"
 }
 
 /*package main
